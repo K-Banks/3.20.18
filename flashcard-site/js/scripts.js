@@ -23,7 +23,7 @@ $(document).ready(function() {
   ];
 
   function newCard() {
-    var arrayGen = Math.floor(Math.random() *  17);
+    var arrayGen = Math.floor(Math.random() * arrayTerm.length);
     var newTerm = arrayTerm[arrayGen];
     var newDefinition = arrayDefinition[arrayGen];
 
@@ -43,9 +43,15 @@ $(document).ready(function() {
     $('button').fadeIn('slow');
   });
 
-    $('button').click(function() {
-      newCard();
-      $('.panel-body').slideUp('600');
-      $('button').fadeOut('5');
-    });
+  $('button').click(function() {
+    newCard();
+    $('.panel-body').slideUp('600');
+    $('button').fadeOut('5');
+  });
+
+  $('.panel-body').click(function() {
+    newCard();
+    $('.panel-body').slideUp('600');
+    $('button').fadeOut('5');
+  });
 });

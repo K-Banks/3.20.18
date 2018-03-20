@@ -28,7 +28,13 @@ button:focus {
   margin: 10% 20%;
 }
 
+.row {
+  margin-left: 10%;
+  margin-right: 10;
+}
+
 .panel-body {
+  cursor: pointer;
   text-indent: 10px;
   padding: 7%;
   font-size: 20px;
