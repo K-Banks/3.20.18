@@ -32,21 +32,20 @@ $(document).ready(function() {
       $('panel-body').addClass('hide');
     });
 
-    $('.panel-body').fadeOut(200, function() {
+    $('.panel-body').slideUp(400, function() {
       $(this).html(newDefinition);
     });
   }
 
   $('.panel-title').click(function() {
     $('.panel-body').removeClass('hide');
-    $('.panel-body').addClass('show');
-    $('button').removeClass('hide');
+    $('.panel-body').slideDown('200');
+    $('button').fadeIn('slow');
   });
 
     $('button').click(function() {
       newCard();
-      $('.panel-body').removeClass('show');
-      $('.panel-body').addClass('hide');
-      $('button').addClass('hide');
+      $('.panel-body').slideUp('600');
+      $('button').fadeOut('5');
     });
 });

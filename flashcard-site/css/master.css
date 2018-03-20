@@ -3,10 +3,16 @@ body {
 }
 
 button {
+  display: none;
   margin: 0 auto;
 }
 .panel {
   margin: 10% 20%;
+}
+
+.panel-body {
+  padding: 5%;
+  display: none;
 }
 
 .panel-title:hover {
