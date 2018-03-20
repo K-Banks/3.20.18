@@ -1,17 +1,22 @@
-h2 {
+body {
+  text-align: center;
+}
+
+button {
+  margin: 0 auto;
+}
+.panel {
+  margin: 10% 20%;
+}
+
+.panel-title:hover {
+  cursor: pointer
+}
+
+.hide {
   display: none;
 }
 
-img {
-  display: none;
-}
-
-.dark {
-  background-color: black;
-  color: white;
-}
-
-.p-box {
-  border: 4px red solid;
-  background-color: yellow;
+.show {
+  display: auto;
 }
