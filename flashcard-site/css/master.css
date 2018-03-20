@@ -1,0 +1,17 @@
+h2 {
+  display: none;
+}
+
+img {
+  display: none;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.p-box {
+  border: 4px red solid;
+  background-color: yellow;
+}
